@@ -13,16 +13,11 @@
     </header>
     <main>
         <div>
-           
-            <ul>
-                {% for product in producto %}
-                <li>
-                    Product Code: {{ product.codigo }}<br>
-                    Product Name: {{ product.nombre }}<br>
-                    Product Price: {{ product.precio }}
-                </li>
-                {% endfor %}
-            </ul>
+            {% for product in producto %}
+            <h1>Nombre: {{ product.nombre }}</h1>
+            <p>Codigo: {{ product.codigo }}</p>
+            <p>Precio: {{ product.precio }}</p>       
+            {% endfor %}
         </div>
     </main>
     <footer>
